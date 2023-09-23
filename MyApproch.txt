@@ -1,0 +1,22 @@
+
+My Approch: -
+
+
+
+Verifying Homepage Load: We automate the process of accessing the homepage URL and checking for successful loading without errors. This involves launching the browser, navigating to the homepage URL, and asserting the absence of any exceptions or error messages.
+
+Performing Search: We automate the search bar interaction by entering search queries, initiating searches, and asserting the presence of relevant search results. This ensures that users can effectively find information on the website.
+
+Clicking on Search Results: We simulate user behavior by clicking on specific search results and verifying that the corresponding pages open correctly. This ensures that the links are functional and lead to the expected content.
+
+Testing Contact Form: We automate the complete contact form submission process, filling in valid data and submitting it. We then verify the presence of a success message, ensuring that users can successfully contact the website.
+
+Testing Invalid Data: To handle negative scenarios, we submit the contact form with invalid or missing data and verify that appropriate error messages are displayed. This ensures that the form validation works as expected.
+
+Note : I mixed scenarios 2 and 3 in my test script TC02_Search, where I searched for an element using the search bar and validated it. In this script, I initially searched for 'aws' using the search bar and clicked on it to ensure that it provided the expected results. 
+
+I also realized that I missed one scenario in which I intended to leave the email text field empty and click on 'Submit' to confirm that it displays the error message. I encountered a null pointer error while attempting this, but I am exploring alternative methods to achieve it.
+
+My testing approach is to keep it simple and precise, avoiding unnecessary statements. I also implemented an @AfterMethod for taking screenshots, but I believe it may not be necessary for all scenarios. It can be particularly useful for failed test cases to provide visual evidence to developers and include in defect reports.
+
+Overall, I did not encounter any bugs in the four scenarios I tested. The web application performed correctly for all of them.
