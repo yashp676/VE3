@@ -23,7 +23,7 @@ You can find an Excel file containing test scenarios and test cases in the 'Test
 
 1. Copy the repository to your local machine.
 
-2. Run tests locally: GO to src/test/java/ -  Select Scenario 1 Package- TC01 - Right-click the feature file and select "Run" or "Debug" to start the test.
+2. Run tests locally: Go to src/test/java/ -  Select Scenario 1 Package- TC01 - Right-click the feature file and select "Run" or "Debug" to start the test.
 
 3. Run tests through the command line: As this project uses Maven, you can invoke the tests using Maven goals.
 
