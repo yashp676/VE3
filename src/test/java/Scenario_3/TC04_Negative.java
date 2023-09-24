@@ -40,7 +40,7 @@ public class TC04_Negative {
     
     @BeforeSuite
     public void initializeExtentReports() {
-        ExtentSparkReporter sparkReport = new ExtentSparkReporter("ContactN.html");
+        ExtentSparkReporter sparkReport = new ExtentSparkReporter("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\ContactN.html");
         extentReports = new ExtentReports();
         sparkReport.config().setTheme(Theme.DARK);
         sparkReport.config().setDocumentTitle("ContactFormN");
@@ -104,7 +104,7 @@ public class TC04_Negative {
         @AfterSuite
         public void generateReport() throws IOException {
             extentReports.flush();
-            Desktop.getDesktop().browse(new File("contactN.html").toURI());
+            Desktop.getDesktop().browse(new File("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\contactN.html").toURI());
         }
         
 

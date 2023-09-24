@@ -40,7 +40,7 @@ public class TC03_Formfilling {
     
     @BeforeSuite
     public void initializeExtentReports() {
-        ExtentSparkReporter sparkReport = new ExtentSparkReporter("Contact.html");
+        ExtentSparkReporter sparkReport = new ExtentSparkReporter("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\Contact.html");
         extentReports = new ExtentReports();
         sparkReport.config().setTheme(Theme.DARK);
         sparkReport.config().setDocumentTitle("ContactForm");
@@ -104,7 +104,7 @@ public class TC03_Formfilling {
         @AfterSuite
         public void generateReport() throws IOException {
             extentReports.flush();
-            Desktop.getDesktop().browse(new File("contact.html").toURI());
+            Desktop.getDesktop().browse(new File("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\contact.html").toURI());
         }
         
 

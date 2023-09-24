@@ -34,7 +34,7 @@ public class TC02_Search {
 
 	    @BeforeSuite
 	    public void initializeExtentReports() {
-	        ExtentSparkReporter sparkReport = new ExtentSparkReporter("Search.html");
+	        ExtentSparkReporter sparkReport = new ExtentSparkReporter("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\Search.html");
 	        extentReports = new ExtentReports();
 	        sparkReport.config().setTheme(Theme.DARK);
 	        sparkReport.config().setDocumentTitle("My Reps");
@@ -95,7 +95,7 @@ public class TC02_Search {
 	    @AfterSuite
 	    public void generateReport() throws IOException {
 	        extentReports.flush();
-	        Desktop.getDesktop().browse(new File("Search.html").toURI());
+	        Desktop.getDesktop().browse(new File("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\Search.html").toURI());
 	    }
 	    
 	   

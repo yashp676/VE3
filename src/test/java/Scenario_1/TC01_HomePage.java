@@ -32,7 +32,8 @@ public class TC01_HomePage {
 
     @BeforeSuite
     public void initializeExtentReports() {
-        ExtentSparkReporter sparkReport = new ExtentSparkReporter("HomePage.html");
+    	
+        ExtentSparkReporter sparkReport = new ExtentSparkReporter("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\HomePage.html");
         extentReports = new ExtentReports();
         sparkReport.config().setTheme(Theme.DARK);
         sparkReport.config().setDocumentTitle("My Report");
@@ -87,7 +88,7 @@ public class TC01_HomePage {
     @AfterSuite
     public void generateReport() throws IOException {
         extentReports.flush();
-        Desktop.getDesktop().browse(new File("HomePage.html").toURI());
+        Desktop.getDesktop().browse(new File("C:\\Users\\yashp\\eclipse-workspace\\VE3\\Reports\\HomePage.html").toURI());
     }
     
 
